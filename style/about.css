@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+body {
+    background-color: black;
+}
+
+
+
+/* MENU */
+
+header menu {
+    display: flex;
+    width: 90vw;
+    height: 90px;
+    margin: auto;
+
+    gap: 120px;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: center;
+}
+
+menu a {
+    padding: 5px 20px;
+    
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+menu nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav > a:hover {
+    color: #00FF00;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
+}
+
+nav > a#home {
+    background-color: #00FF00;
+    color: black;
+    border: 2px solid #00FF00;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00;
+}
+nav > a#home:hover {
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
+}
+
+
+
+/* MAIN */
+
+main {
+    width: 70vw;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 36px;
+    color: white;
+}
+
+main h1 > strong {
+    color: #00FF00;
+    font-weight: 900;
+}
+main h1 > em {
+    font-size: 52px;
+}
+
+main h2 {
+    margin-bottom: 18px;
+    color: white;
+}
+
+main h3 {
+    color: white;
+}
+
+main p {
+    color: white;
+}
+
+
+/* CONTENT PAGES */
+
+div.container {
+    display: flex;
+    height: calc(100vh - 90px);
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 240px;
+}
+
+div.container h1 {
+    font-size: 60px;
+}
+
+div.container p {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+div.container a {
+    color: #00FF00;
+    font-size: 24px;
+    text-decoration: none;
+}
+div.container a:hover {
+    text-decoration: underline;
+}
+
+div.breath {
+    height: 40px;
+    box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+
+div#page3 {
+    flex-direction: row-reverse;
+}

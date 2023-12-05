@@ -57,8 +57,7 @@ menu nav {
 }
 
 nav > a:hover {
-    background-color: #00FF00;
-    color: black;
+    color: #00FF00;
     box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
 }
 
