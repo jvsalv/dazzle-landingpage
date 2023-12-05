@@ -30,25 +30,47 @@ body {
 
 header menu {
     display: flex;
+    width: 90vw;
     height: 90px;
+    margin: auto;
 
-    gap: 80px;
+    gap: 120px;
     flex-direction: row;
     align-items: center;
     vertical-align: center;
-    justify-content: center;
 }
 
-menu > a {
-    width: 150px;
+menu a {
+    padding: 5px 20px;
+    
+    border-radius: 50px;
     color: white;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
+    text-align: center;
 }
-menu > a:hover {
-    font-size: 21px;
-    text-decoration: underline;
+
+menu nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav > a:hover {
+    background-color: #00FF00;
+    color: black;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
+}
+
+nav > a#home {
+    background-color: #00FF00;
+    color: black;
+    border: 2px solid #00FF00;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00;
+}
+nav > a#home:hover {
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
 }
 
 
@@ -99,6 +121,10 @@ a.button1 {
     text-decoration: none;
     border: 2px solid #00FF00;
     border-radius: 50px;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00;
+}
+a.button1:hover {
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
 }
 
 a.button2 {
@@ -111,27 +137,46 @@ a.button2 {
     border-radius: 20px;
 }
 
+input.button1 {
+    padding: 10px 20px;
+
+    background-color: #00FF00;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #00FF00;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00;
+}
+input.button1:hover {
+    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
+}
+
+
 /* FRONT PAGE */
 
 div.fpage {
     display: flex;
+    width: 80vw;
     height: calc(100vh - 130px);
+    margin: auto;
 
     flex-direction: row;
     align-items: center;
 
     background: black url(../media/fpagebg.png) no-repeat;
-    background-position: bottom center;
+    background-position: bottom right;
     background-size: contain;
 }
 
-div.fpage > div.container {
-    width: 200px;
+div.fpage > div.content {
+    width: 750px;
 }
 
 div.fpage h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
+    font-size: 90px;
+    margin-bottom: 0px
 }
 
 div.fpage h1 > em {
@@ -141,12 +186,17 @@ div.fpage h1 > em {
 div.fpage h2 {
     font-size: 24px;
     font-weight: 300;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
+}
+
+div.fpage p {
+    margin-bottom: 60px;
 }
 
 div.fpage a {
-    box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00;
+    font-size: 24px;
 }
+
 div.fpage a:hover {
     box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00;
 }
@@ -160,6 +210,7 @@ div.container {
     
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 60px;
 }
 
@@ -178,6 +229,59 @@ div.container a {
 div#page2 {
     box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
 }
+
 div#page3 {
     flex-direction: row-reverse;
+}
+
+/* FORM */
+
+div#page4 {
+    height: 700px;
+}
+
+div#page4 form {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#page4 form input[type= email] {
+    width: 350px;
+    height: 50px;
+    padding: 5px 10px;
+
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+
+    margin-bottom: 36px;
+}
+
+div#page4 h1 {
+    margin-bottom: 18px;
+}
+
+div#page4 form ::placeholder {
+    color: rgb(160, 160, 160);
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    height: 200px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
 }
