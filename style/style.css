@@ -226,7 +226,8 @@ div.container a {
     margin: 0px 20px 0px 0px;
 }
 
-div#page2 {
+div.breath {
+    height: 40px;
     box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
 }
 
@@ -258,15 +259,23 @@ div#page4 form input[type= email] {
     border-radius: 10px;
     font-size: 16px;
 
-    margin-bottom: 36px;
+    margin-bottom: 48px;
 }
 
 div#page4 h1 {
     margin-bottom: 18px;
 }
 
+div#page4 p {
+    margin-bottom: 24px;
+}
+
 div#page4 form ::placeholder {
     color: rgb(160, 160, 160);
+}
+
+div#page4 form input[type= submit] {
+    font-size: 24px;
 }
 
 
